@@ -1,25 +1,42 @@
 #include <stdio.h>
 
 //Created by Nathan Hoang
-//Project 1 - Figure 2.13
+//Project 1 - Figure 2.10
 //Date: October 1, 2020
 
 char letter;
 
+int power2 = 8;
+int result = 0;
+int counter = 0;
+
 int main() {
     printf("Enter Four 1's or 0's and end it with an *: ");
-      scanf("%c", &letter);
-        while (letter != '*') {
+    scanf("%c", &letter);
+    while (letter != '*') {
             if (letter == '1') {
-                printf("1 * power2 = \n");
+                result+=power2;
             }
             else if (letter =='0') {
-                printf("0 * power2 = \n");
+                result;
             }
             else {
                 printf("%c", letter);
             }
-                scanf("%c", &letter);
+                counter++;
+                    if (counter==1) {
+                        power2 = 4;
+                    }
+                    else if (counter==2) {
+                       power2 = 2; 
+                    }
+                    else if (counter==3) {
+                        power2 = 1;
+                    }
+                    
+        scanf("%c", &letter);
             }
-      return 0;
+        printf("That is " "%d", result);
+        printf(" in decimal");
+    return 0;
 }
