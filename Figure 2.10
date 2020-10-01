@@ -1,0 +1,26 @@
+#include stdio.h
+
+//Created by Nathan Hoang
+//Project 1 - Figure 2.10
+//Date: October 1, 2020
+
+int main() {
+    int num;
+      scanf(%d, &num);
+        if (num == 2) {
+            printf(Binary 0..1n);
+        }
+        else if (num == 3){
+            printf(Trinary 0..2n);
+        }
+        else if (num == 8){
+            printf(Octal 0..7n);
+        }
+        else if (num == 16){
+            printf(Hexadecimal 0..F);
+        }
+        else{
+            printf(Erroe please input 2, 3, 8, or 16);
+        }
+    return 0;
+}
