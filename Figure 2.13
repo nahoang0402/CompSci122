@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+//Created by Nathan Hoang
+//Project 1 - Figure 2.13
+//Date: October 1, 2020
+
+char letter;
+
+int main() {
+    printf("Enter Four 1's or 0's and end it with an *: ");
+      scanf("%c", &letter);
+        while (letter != '*') {
+            if (letter == '1') {
+                printf("1 * power2 = \n");
+            }
+            else if (letter =='0') {
+                printf("0 * power2 = \n");
+            }
+            else {
+                printf("%c", letter);
+            }
+                scanf("%c", &letter);
+            }
+      return 0;
+}
