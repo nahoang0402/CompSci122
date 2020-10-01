@@ -28,6 +28,12 @@ int main() {
             n++;
         }
     }
+    else if (num == 10){
+        while (n!=4){
+            printf("%f\n", pow(num, n));
+            n++;
+        }
+    }
     else if (num == 16){
         while (n!=4){
             printf("%f\n", pow(num, n));
