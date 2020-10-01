@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 //Created by Nathan Hoang
-//Project 1 - Figure 2.6
+//Project 1 - Phase 3 of Figure 2.6
 //Date: October 1, 2020
 
 int main() {
@@ -9,10 +9,17 @@ int main() {
     int num2;
     int myDivide;
     int myRemainder;
-        scanf("%d %d", &num1, &num2);
-            myDivide = (num1 / num2);
-            myRemainder = (num1 % num2);
-                printf("Divide = %d\n", myDivide);
-                printf("Remainder = %d\n", myRemainder);
-        return 0;
+        printf("Enter your Dividend: ");
+            scanf("%d", &num1);
+        printf("Enter your Divisor: ");
+            scanf("%d", &num2);
+                while (num1>0){
+                    myDivide = (num1 / num2);
+                    myRemainder = (num1 % num2);
+                    printf("%d\n", myRemainder);
+                        num1=myDivide;
+                        // ra2
+                }
+    // ra1
+    return 0;
 }
