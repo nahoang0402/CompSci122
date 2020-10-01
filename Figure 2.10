@@ -1,4 +1,5 @@
-#include stdio.h
+#include <stdio.h>
+#include <math.h>
 
 //Created by Nathan Hoang
 //Project 1 - Figure 2.10
@@ -6,21 +7,35 @@
 
 int main() {
     int num;
-      scanf(%d, &num);
-        if (num == 2) {
-            printf(Binary 0..1n);
+    int n=0;
+    printf("Enter a number base (2, 3, 8, 10 or 16):\n");
+    scanf("%d", &num);
+    if (num == 2) {
+        while (n!=4){
+            printf("%f\n", pow(num, n));
+            n++;
         }
-        else if (num == 3){
-            printf(Trinary 0..2n);
+    }
+    else if (num == 3){
+        while (n!=4){
+            printf("%f\n", pow(num, n));
+            n++;
         }
-        else if (num == 8){
-            printf(Octal 0..7n);
+    }
+    else if (num == 8){
+        while (n!=4){
+            printf("%f\n", pow(num, n));
+            n++;
         }
-        else if (num == 16){
-            printf(Hexadecimal 0..F);
+    }
+    else if (num == 16){
+        while (n!=4){
+            printf("%f\n", pow(num, n));
+            n++;
         }
-        else{
-            printf(Erroe please input 2, 3, 8, or 16);
-        }
+    }
+    else{
+        printf("Error please input 2, 3, 8, or 16");
+    }
     return 0;
 }
