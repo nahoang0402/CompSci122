@@ -1,20 +1,34 @@
 #include <stdio.h>
 
 //Created by Nathan Hoang
-//Project 1 - Figure 2.12
+//Project 1 - Figure 2.10
 //Date: October 1, 2020
 
 int main() {
     int guess;
-      printf("Pick a number 10..15: ");
-        scanf("%d", &guess);
-          switch (guess) {
-              case 10: printf("A\n"); break;
-              case 11: printf("B\n"); break;
-              case 12: printf("C\n"); break;
-              case 13: printf("D\n"); break;
-              case 14: printf("E\n"); break;
-              case 15: printf("F\n");
-          }
+    printf("Pick a number 1..15: ");
+    scanf("%d", &guess);
+    if ((guess==1)||(guess==2)||(guess==3)||(guess==4)||(guess==5)||(guess==6)||(guess==8)||(guess==9)||(guess==10)||(guess==11)||(guess==12)||(guess==13)||(guess==14)||(guess==15)){
+        switch (guess) {
+            case 1: printf("1 Decimal is 1 in hex\n"); break;
+            case 2: printf("2 Decimal is 2 in hex\n"); break;
+            case 3: printf("3 Decimal is 3 in hex\n"); break;
+            case 4: printf("4 Decimal is 4 in hex\n"); break;
+            case 5: printf("5 Decimal is 5 in hex\n"); break;
+            case 6: printf("6 Decimal is 6 in hex\n"); break;
+            case 7: printf("7 Decimal is 7 in hex\n"); break;
+            case 8: printf("8 Decimal is 8 in hex\n"); break;
+            case 9: printf("9 Decimal is 9 in hex\n"); break;
+            case 10: printf("10 Decimal is A in hex\n"); break;
+            case 11: printf("11 Decimal is B in hex\n"); break;
+            case 12: printf("12 Decimal is C in hex\n"); break;
+            case 13: printf("13 Decimal is D in hex\n"); break;
+            case 14: printf("14 Decimal is E in hex\n"); break;
+            case 15: printf("15 Decimal is F in hex\n");
+        }
+    }
+    else {
+        printf("Please enter a number from 1..15!!!");
+    }
     return 0;
 }
